@@ -1,7 +1,6 @@
 
 import os,glob,read,time
 from read import supported_filestypes as sftp
-# from from_text import elapsed
 
 # def GLOBALS
 scripts =[]
