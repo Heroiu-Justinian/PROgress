@@ -13,7 +13,6 @@ def get_scripts(path,ftypes,lst):
     for extension in ftypes:
         lst.extend(glob.glob(f"/home/{username}/{path}*{extension}"))
 
-#  (i) I am inclined to leave the comments as written lines because they are quite importamt and you actually take the time to write them so...
 def count_lines(script):
     count = 0
     lines =[]
