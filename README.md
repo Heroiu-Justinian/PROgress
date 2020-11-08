@@ -11,3 +11,7 @@ It is currently working only with linux and the path you have to provide should 
 IMPORTANT: the first run is an init run so the results have nothing to do with the real data
 
 
+
+
+At the moment it is awful as it was coded in 2 hours by a noob in python.
+
