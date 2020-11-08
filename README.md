@@ -6,3 +6,8 @@ Using it is trivial: run progress.py and provide the program with the path to th
 It is currently working only with linux and the path you have to provide should be anything after /home/username/ as it gets this path as default
 
 
+
+
+IMPORTANT: the first run is an init run so the results have nothing to do with the real data
+
+
