@@ -1,4 +1,4 @@
-# PROgress is a simple program that keeps track of how many lines of code you have written since the last time have run the script
+# PROgress is a simple program that helps you keep track of how many lines of code you have added/deleted in a time period
 
 # Usage:
 python3 progress.py
