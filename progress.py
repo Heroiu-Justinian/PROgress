@@ -43,7 +43,7 @@ lines_since_last_time = current_lines - last_time_lines
 
 
 time_in_minutes = f"{floor(elapsed/60)} minutes and {elapsed%60} seconds"
-time_in_hours = f"{floor(time_in_minutes/60)} hours and {time_in_minutes%60} minutes"
+time_in_hours = f"{floor(elapsed/3600)} hours and {floor(elapsed/60)} minutes"
 
 
 if current_lines >= last_time_lines:
