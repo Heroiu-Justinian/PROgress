@@ -7,6 +7,7 @@ After running this commmand you will be prompted to give a directory path
 
 # Note: 
 *The program will count the lines of code only in the specified directory and the directories that are direct children of the specified one
+
 *It is currently working only with linux and the path you have to provide should be anything after /home/username/ as it gets this path as default
 
 
