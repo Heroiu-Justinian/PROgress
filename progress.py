@@ -55,7 +55,7 @@ else:
     if time_in_minutes > 60:   
         print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
     else:
-        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_minutes}")
 
         
 
