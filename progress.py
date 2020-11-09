@@ -42,20 +42,20 @@ lines_since_last_time = current_lines - last_time_lines
 
 
 
-time_in_minutes = f"{floor(elapsed/60)} minutes and {elapsed%60} seconds"
-time_in_hours = f"{floor(elapsed/3600)} hours and {floor(elapsed/60)} minutes"
+time_in_minutes = floor(elapsed/60)
+time_in_hours = floor(elapsed/3600)
 
 
 if current_lines >= last_time_lines:
     if time_in_minutes > 60:   
-        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours} hours and {time_in_minutes} minutes")
     else:
-        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_minutes}")
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_minutes} minutes")
 else:
     if time_in_minutes > 60:   
-        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours} hours and {time_in_minutes} minutes")
     else:
-        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_minutes}")
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_minutes} minutes")
 
         
 
