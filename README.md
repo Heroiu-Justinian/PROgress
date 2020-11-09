@@ -1,6 +1,6 @@
 # PROgress is a simple program that keeps track of how many lines of code you have written since the last time have run the script
 
-#Usage:
+# Usage:
 python3 progress.py
 
 After running this commmand you will be prompted to give a directory path
