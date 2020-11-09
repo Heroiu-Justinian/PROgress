@@ -1,5 +1,6 @@
 
 import os,glob,processes,time
+from math import floor
 from processes import supported_filestypes as sftp
 
 # def GLOBALS
@@ -15,7 +16,7 @@ all_directories.append(current_directory)
 
 
 with open("time.txt","r") as time_table:
-    elapsed =  round(time.time() - float(time_table.read()))
+    elapsed =time.time() - float(time_table.read())
 
 with open("time.txt","w") as time_table:
     time_table.write(str(float(time.time())))
@@ -42,13 +43,17 @@ lines_since_last_time = current_lines - last_time_lines
 
 
 
-
+time_in_minutes = round(elapsed/60)
+time_in_hours = f"{floor(time_in_minutes/60)} hours and {time_in_minutes%60} minutes"
 
 
 if current_lines >= last_time_lines:
-    print(f"Well my friend the script says you have written {lines_since_last_time} lines of code in {elapsed/60} minutes")
+    if time_in_minutes > 60:   
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
+    else:
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
 else:
-    print(f"Since the last time you ran the script ({elapsed/60} minutes ago) you have deleted {lines_since_last_time * -1} lines of code")
+    print(f"Since the last time you ran the script ({time_in_hours}) minutes ago) you have deleted {lines_since_last_time * -1} lines of code")
 
 
         
