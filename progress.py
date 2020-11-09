@@ -27,7 +27,7 @@ with open("lines.txt","r") as f :
 
 for current in all_directories:
     processes.get_scripts(current,sftp,scripts)
-    
+
 for script in scripts:
     current_lines += processes.count_lines(script)
     
@@ -42,7 +42,7 @@ lines_since_last_time = current_lines - last_time_lines
 
 
 
-time_in_minutes = round(elapsed/60)
+time_in_minutes = f"{floor(elapsed/60)} minutes and {elapsed%60} seconds"
 time_in_hours = f"{floor(time_in_minutes/60)} hours and {time_in_minutes%60} minutes"
 
 
@@ -50,7 +50,7 @@ if current_lines >= last_time_lines:
     if time_in_minutes > 60:   
         print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
     else:
-        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_minutes}")
 else:
     if time_in_minutes > 60:   
         print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
