@@ -26,9 +26,8 @@ with open("lines.txt","r") as f :
     last_time_lines = int(f.read())
 
 for current in all_directories:
-    # print(current)
     processes.get_scripts(current,sftp,scripts)
-print(scripts)
+    
 for script in scripts:
     current_lines += processes.count_lines(script)
     
