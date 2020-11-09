@@ -53,8 +53,10 @@ if current_lines >= last_time_lines:
     else:
         print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
 else:
-    print(f"Since the last time you ran the script ({time_in_hours}) minutes ago) you have deleted {lines_since_last_time * -1} lines of code")
-
+    if time_in_minutes > 60:   
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
+    else:
+        print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_hours}")
 
         
 
