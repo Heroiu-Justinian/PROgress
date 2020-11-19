@@ -38,10 +38,6 @@ for script in scripts:
     comms += processes.count_comments(script)
 
 
-
-    
-
-
 # (i) This is the limit. I put this here so I don't have to go through every script again and number all the lines again, I just start from the lim
 lim = len(scripts)
 with open("lines.txt" , "w") as f:

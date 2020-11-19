@@ -5,8 +5,6 @@ supported_filestypes = ['.py','.cpp','.c','.js','.css','.html']
 username = os.getlogin()
 
 
-
-
 def get_directory():
     curr_dir = ""
     run_as_last_time = input("Do you want the script to run in the same directory?(y/n)")
