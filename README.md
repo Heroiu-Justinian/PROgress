@@ -1,5 +1,10 @@
 # PROgress is a simple program that helps you keep track of how many lines of code you have added/deleted in a time period
 
+# Prerequisites
+modules : os,glob,time,math
+python version : python3.x.x
+
+
 # Usage:
 python3 progress.py
 
