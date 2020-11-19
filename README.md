@@ -1,7 +1,8 @@
 # PROgress is a simple program that helps you keep track of how many lines of code you have added/deleted in a time period
 
 In addition to that it lets you know if you don't use enough comments in your code(if the ratio between the comments and the actual lines of code is less than 1:30)
-Note:the comment feature it only works with python comments I have already spent almost 3 hours on this and I am bored so I don't think I'll make it work for other languages as well.
+
+Note:the comment feature only works with python comments I have already spent almost 3 hours on this and I am bored so I don't think I'll make it work for other languages as well.
 
 # Prerequisites
 modules : os,glob,time,math
