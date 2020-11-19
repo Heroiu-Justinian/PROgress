@@ -26,6 +26,7 @@ with open("time.txt","w") as time_table:
     time_table.write(str(float(time.time())))
 
 
+
 with open("lines.txt","r") as f : 
     last_time_lines = int(f.read())
 
