@@ -6,6 +6,7 @@ from processes import supported_filestypes as sftp
 # def GLOBALS
 scripts =[]
 current_lines = 0
+comms = 0
 lines_since_last_time = 0
 current_directory = processes.get_directory()
 sub_directories  = processes.traverse_dir(current_directory)
@@ -13,6 +14,9 @@ all_directories = [subs for subs in sub_directories]
 all_directories.append(current_directory)
 
 
+
+with(open("current.txt","w")) as curr: 
+    curr.write(current_directory)
 
 
 with open("time.txt","r") as time_table:
@@ -30,6 +34,10 @@ for current in all_directories:
 
 for script in scripts:
     current_lines += processes.count_lines(script)
+    comms += processes.count_comments(script)
+
+
+
     
 
 
@@ -57,6 +65,11 @@ else:
     else:
         print(f"It looks like you have written {lines_since_last_time} lines of code in {time_in_minutes} minutes")
 
-        
+
+if(comms/current_lines < 0.03):
+    print("Also you should consider adding more comments to your project as the ratio between the number of comments in your code and the number of lines of code you have written in total is less than 1 to 30 which is not very ideal in most cases")
+
+
+
 
 
